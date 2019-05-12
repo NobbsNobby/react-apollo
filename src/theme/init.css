@@ -1,0 +1,48 @@
+@import "normalize.css";
+@import "fonts.css";
+@import "media.css";
+@import "palette.css";
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background: linear-gradient(
+    to right,
+    hsla(330, 100%, 45%, 1),
+    ease-in-out,
+    hsla(210, 100%, 45%, 1)
+  );
+  &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 50%;
+      background: linear-gradient(
+              to bottom,
+              hsla(0, 0%, 0%, 0.75),
+              ease-in-out,
+              hsla(0, 0%, 0%, 0)
+      );
+  }
+
+  &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 50%;
+      background: linear-gradient(
+              to top,
+              hsla(0, 0%, 0%, 0.75),
+              ease-in-out,
+              hsla(0, 0%, 0%, 0)
+      );
+  }
+}

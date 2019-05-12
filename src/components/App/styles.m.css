@@ -1,0 +1,7 @@
+.app {
+    & .header {
+        font-family: roboto mono, roboto, system-ui;
+        font-smoothing: antialiased;
+        color: white;
+    }
+}
